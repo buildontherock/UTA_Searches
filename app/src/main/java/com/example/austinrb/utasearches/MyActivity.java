@@ -123,6 +123,7 @@ public class MyActivity extends Activity {
         tagText.setText("");
 
         tagList.add(tag);
+        searchText.requestFocus();
         adapter.notifyDataSetChanged();
 
 
