@@ -49,7 +49,7 @@ public class MyActivity extends Activity {
         final ListView listView = (ListView) findViewById(R.id.listView);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tagList);
         listView.setAdapter(adapter);
-        
+
         loadInitialPreferences();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
