@@ -1,0 +1,64 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:columnCount="2"
+    android:rowCount="5"
+    tools:context=".MyActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchQuery"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:hint="@string/HintUTA" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/tagQuery"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:hint="@string/TagHint"
+        android:layout_width="278dp" />
+
+    <ImageButton
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:id="@+id/saveButton"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:src="@drawable/save_button"
+        android:contentDescription="@string/saveButton1"
+        android:onClick="onSaveButtonClick" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:background="#ff62ffba">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TagTitle"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</GridLayout>
